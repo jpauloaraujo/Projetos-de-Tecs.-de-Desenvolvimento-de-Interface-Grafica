@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <section id="cabeçalho">
+            <h1 id="title">Pesquisa de Satisfação</h1>
+            <p id="description">
+              Preencha o formulário abaixo para nos ajudar a melhorar nossos serviços.
+            </p>
+        </section>
+    </header>
+    
+    <main>
+        <form id="survey-form">
+          <label id="name-label" for="name"> Nome </label>
+          <input id="name" type="text" placeholder="Digite seu nome" required />
+          <label id="email-label" for="email"> Email </label>
+          <input id="email" type="email" placeholder="Digite seu email" required />
+          <label id="number-label" for="number"> Idade </label>
+          <input
+            id="number"
+            type="number"
+            min="10"
+            max="100"
+            placeholder="Informe sua idade"
+          />
+          <label for="dropdown"> Qual sua área de interesse? </label>
+          <select id="dropdown">
+            <option value="frontend">Front-end</option>
+            <option value="backend">Back-end</option>
+            <option value="dados">Ciência de Dados</option>
+          </select>
+          <p>Você recomendaria este curso?</p>
+          <label>
+            <input type="radio" name="recommend" value="sim" />
+            Sim
+          </label>
+          <label>
+            <input type="radio" name="recommend" value="nao" />
+            Não
+          </label>
+          <p>Quais tecnologias você já utilizou?</p>
+          <label>
+            <input type="checkbox" value="html" />
+            HTML
+          </label>
+          <label>
+            <input type="checkbox" value="css" />
+            CSS
+          </label>
+          <label>
+            <input type="checkbox" value="javascript" />
+            JavaScript
+          </label>
+          <p>Comentários adicionais:</p>
+          <textarea placeholder="Digite aqui seus comentários..."></textarea>
+          <button id="submit" type="submit">Enviar</button>
+        </form>
+    </main>
+  </body>
+</html>
