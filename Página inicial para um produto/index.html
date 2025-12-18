@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Premium - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/751/751663.png" alt="Logo Café Original">
+            <span>Café Original</span>
+        </div>
+
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Diferenciais</a>
+            <a class="nav-link" href="#how-it-works">Como Funciona</a>
+            <a class="nav-link" href="#pricing">Preços</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>O melhor café feito à mão para começar seu dia</h1>
+            
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input 
+                    id="email" 
+                    name="email" 
+                    type="email" 
+                    placeholder="Digite seu email aqui..." 
+                    required>
+                <input 
+                    id="submit" 
+                    type="submit" 
+                    value="QUERO COMEÇAR">
+            </form>
+        </section>
+
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                    <div class="icon">🔥</div>
+                    <div class="desc">
+                        <h2>Torra Premium</h2>
+                        <p>Grãos selecionados e torrados à perfeição para o máximo sabor.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">🚚</div>
+                    <div class="desc">
+                        <h2>Entrega Rápida</h2>
+                        <p>Receba seu café fresco em casa em até 24 horas.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">🍃</div>
+                    <div class="desc">
+                        <h2>100% Orgânico</h2>
+                        <p>Cultivado sem pesticidas, respeitando o meio ambiente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works">
+                <iframe 
+                    id="video" 
+                    width="560" 
+                    height="315" 
+                    src="assets/videoTeste.mp4" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+            <p>Vídeo qualquer, selecionado apenas para fins acadêmicos</p>
+            <section id="pricing">
+                <div class="product" id="tenor">
+                    <div class="level">Básico</div>
+                    <h2>R$25</h2>
+                    <ol>
+                        <li>500g de Café</li>
+                        <li>Torra Média</li>
+                        <li>Frete Grátis</li>
+                    </ol>
+                    <button class="btn">Selecionar</button>
+                </div>
+                <div class="product" id="bass">
+                    <div class="level">Pro</div>
+                    <h2>R$50</h2>
+                    <ol>
+                        <li>1kg de Café</li>
+                        <li>Torra Escura</li>
+                        <li>Caneca Brinde</li>
+                    </ol>
+                    <button class="btn">Selecionar</button>
+                </div>
+                <div class="product" id="valve">
+                    <div class="level">Master</div>
+                    <h2>R$80</h2>
+                    <ol>
+                        <li>2kg de Café</li>
+                        <li>Kit Barista</li>
+                        <li>Acesso Vip</li>
+                    </ol>
+                    <button class="btn">Selecionar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Café Original, Inc.</p>
+    </footer>
+</body>
+</html>
